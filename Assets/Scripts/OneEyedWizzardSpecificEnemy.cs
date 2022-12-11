@@ -1,0 +1,50 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class OneEyedWizzardSpecificEnemy : SpecificEnemy
+{
+    [SerializeField]
+    private Animator animator;
+
+    [SerializeField]
+    private Transform firingPoint;
+
+    [SerializeField]
+    private GameObject lightiningBulletGOPrefab;
+
+    private bool isVisibleInCamera;
+
+    private Camera mainCamera;
+
+    private Transform target;
+
+    private int attackAnimationHash = Animator.StringToHash("Attack");
+
+    private void Start()
+    {
+        mainCamera = Camera.main;
+    }
+
+    public override void Attack(Transform _target)
+    {
+        //base.Attack();
+        target = _target;
+        if (IsVisibleInCamera())
+        {
+            animator.SetTrigger(attackAnimationHash);
+        }
+    }
+
+    public void LaunchBomb()
+    {
+        GameObject bullet = Instantiate(lightiningBulletGOPrefab, firingPoint.position, lightiningBulletGOPrefab.transform.rotation);
+        bullet.GetComponent<Bullet>().Fire(target.transform);
+    }
+
+    private bool IsVisibleInCamera()
+    {
+        Vector3 screenPos = mainCamera.WorldToScreenPoint(transform.position);
+        return screenPos.x > 0 && screenPos.x < Screen.width && screenPos.y > 0 && screenPos.y < Screen.height;
+    }
+}

@@ -1,0 +1,841 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1093919407415690966
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1093919407415690961}
+  - component: {fileID: 1093919407415690960}
+  m_Layer: 0
+  m_Name: Enemy Generator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1093919407415690961
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093919407415690966}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1093919407415690960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093919407415690966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36ccd95d66c093f45a20b6d4f2bd305f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerGO: {fileID: 0}
+  gamePlayManager: {fileID: 0}
+  levels:
+  - waves:
+    - enemies:
+      - enemy: dragon
+        minOccurance: 1
+        maxOccurance: 1
+      NoOfEnemies: 10
+    NextWaveTime: 
+    spawnPatternIndex: 0
+  - waves:
+    - enemies:
+      - enemy: dragon
+        minOccurance: 2
+        maxOccurance: 2
+      NoOfEnemies: 10
+    - enemies: []
+      NoOfEnemies: 1
+    NextWaveTime: 
+    spawnPatternIndex: 1
+  - waves:
+    - enemies:
+      - enemy: dragon
+        minOccurance: 2
+        maxOccurance: 2
+      - enemy: orc
+        minOccurance: 1
+        maxOccurance: 1
+      NoOfEnemies: 10
+    NextWaveTime: 
+    spawnPatternIndex: 2
+  - waves:
+    - enemies:
+      - enemy: zombie
+        minOccurance: 2
+        maxOccurance: 2
+      - enemy: orc
+        minOccurance: 1
+        maxOccurance: 1
+      NoOfEnemies: 10
+    NextWaveTime: 
+    spawnPatternIndex: 3
+  - waves:
+    - enemies:
+      - enemy: dragon
+        minOccurance: 2
+        maxOccurance: 2
+      - enemy: zombie
+        minOccurance: 3
+        maxOccurance: 3
+      NoOfEnemies: 15
+    NextWaveTime: 
+    spawnPatternIndex: 4
+  - waves:
+    - enemies:
+      - enemy: dragon
+        minOccurance: 1
+        maxOccurance: 1
+      - enemy: flower monster
+        minOccurance: 1
+        maxOccurance: 1
+      NoOfEnemies: 10
+    NextWaveTime: 
+    spawnPatternIndex: 5
+  - waves:
+    - enemies:
+      - enemy: zombie
+        minOccurance: 3
+        maxOccurance: 3
+      - enemy: orc
+        minOccurance: 1
+        maxOccurance: 1
+      NoOfEnemies: 20
+    - enemies:
+      - enemy: flower monster
+        minOccurance: 1
+        maxOccurance: 1
+      NoOfEnemies: 10
+    NextWaveTime: 0f000000
+    spawnPatternIndex: 6
+  - waves:
+    - enemies:
+      - enemy: dragon
+        minOccurance: 2
+        maxOccurance: 2
+      - enemy: scare crow
+        minOccurance: 1
+        maxOccurance: 1
+      NoOfEnemies: 20
+    NextWaveTime: 
+    spawnPatternIndex: 7
+  - waves:
+    - enemies:
+      - enemy: zombie
+        minOccurance: 2
+        maxOccurance: 2
+      - enemy: scare crow
+        minOccurance: 1
+        maxOccurance: 1
+      NoOfEnemies: 10
+    - enemies:
+      - enemy: dragon
+        minOccurance: 2
+        maxOccurance: 2
+      NoOfEnemies: 10
+    NextWaveTime: 0c000000
+    spawnPatternIndex: 8
+  - waves:
+    - enemies:
+      - enemy: dragon
+        minOccurance: 2
+        maxOccurance: 2
+      - enemy: king cobra
+        minOccurance: 1
+        maxOccurance: 1
+      NoOfEnemies: 10
+    - enemies:
+      - enemy: dragon
+        minOccurance: 1
+        maxOccurance: 1
+      - enemy: king cobra
+        minOccurance: 1
+        maxOccurance: 1
+      NoOfEnemies: 10
+    NextWaveTime: 0c000000
+    spawnPatternIndex: 9
+  - waves:
+    - enemies:
+      - enemy: skeleton
+        minOccurance: 1
+        maxOccurance: 1
+      - enemy: scare crow
+        minOccurance: 1
+        maxOccurance: 1
+      NoOfEnemies: 20
+    - enemies:
+      - enemy: skeleton
+        minOccurance: 2
+        maxOccurance: 2
+      NoOfEnemies: 10
+    NextWaveTime: 0c000000
+    spawnPatternIndex: 10
+  - waves:
+    - enemies:
+      - enemy: skeleton
+        minOccurance: 2
+        maxOccurance: 2
+      - enemy: skeleton round
+        minOccurance: 2
+        maxOccurance: 2
+      NoOfEnemies: 10
+    NextWaveTime: 
+    spawnPatternIndex: 11
+  - waves:
+    - enemies:
+      - enemy: skeleton round
+        minOccurance: 1
+        maxOccurance: 1
+      - enemy: skeleton archer
+        minOccurance: 2
+        maxOccurance: 2
+      NoOfEnemies: 10
+    NextWaveTime: 
+    spawnPatternIndex: 12
+  - waves:
+    - enemies:
+      - enemy: skeleton
+        minOccurance: 4
+        maxOccurance: 4
+      - enemy: spiderling venom
+        minOccurance: 2
+        maxOccurance: 2
+      NoOfEnemies: 20
+    - enemies:
+      - enemy: skeleton
+        minOccurance: 3
+        maxOccurance: 3
+      NoOfEnemies: 10
+    NextWaveTime: 0f000000
+    spawnPatternIndex: 13
+  - waves:
+    - enemies:
+      - enemy: orc slinger
+        minOccurance: 2
+        maxOccurance: 2
+      - enemy: spiderling venom
+        minOccurance: 3
+        maxOccurance: 3
+      NoOfEnemies: 20
+    - enemies:
+      - enemy: orc slinger
+        minOccurance: 1
+        maxOccurance: 1
+      - enemy: spiderling venom
+        minOccurance: 2
+        maxOccurance: 2
+      NoOfEnemies: 10
+    NextWaveTime: 0f000000
+    spawnPatternIndex: 14
+  - waves:
+    - enemies:
+      - enemy: king cobra
+        minOccurance: 2
+        maxOccurance: 2
+      - enemy: skeleton round
+        minOccurance: 1
+        maxOccurance: 1
+      NoOfEnemies: 10
+    - enemies:
+      - enemy: king cobra
+        minOccurance: 1
+        maxOccurance: 1
+      NoOfEnemies: 10
+    NextWaveTime: 0f000000
+    spawnPatternIndex: 15
+  - waves:
+    - enemies:
+      - enemy: skeleton
+        minOccurance: 2
+        maxOccurance: 2
+      - enemy: skeleton archer
+        minOccurance: 1
+        maxOccurance: 1
+      NoOfEnemies: 10
+    - enemies:
+      - enemy: dragon
+        minOccurance: 2
+        maxOccurance: 2
+      - enemy: skeleton archer
+        minOccurance: 1
+        maxOccurance: 1
+      NoOfEnemies: 10
+    NextWaveTime: 10000000
+    spawnPatternIndex: 16
+  - waves:
+    - enemies:
+      - enemy: orc
+        minOccurance: 2
+        maxOccurance: 2
+      - enemy: scare crow
+        minOccurance: 1
+        maxOccurance: 1
+      NoOfEnemies: 10
+    - enemies:
+      - enemy: spiderling venom
+        minOccurance: 3
+        maxOccurance: 3
+      NoOfEnemies: 10
+    NextWaveTime: 14000000
+    spawnPatternIndex: 17
+  - waves:
+    - enemies:
+      - enemy: spiderling venom
+        minOccurance: 2
+        maxOccurance: 2
+      - enemy: spider venom
+        minOccurance: 1
+        maxOccurance: 1
+      NoOfEnemies: 10
+    NextWaveTime: 
+    spawnPatternIndex: 18
+  - waves:
+    - enemies:
+      - enemy: monster catbat
+        minOccurance: 3
+        maxOccurance: 3
+      - enemy: spider venom
+        minOccurance: 1
+        maxOccurance: 1
+      NoOfEnemies: 20
+    - enemies:
+      - enemy: orc
+        minOccurance: 1
+        maxOccurance: 1
+      NoOfEnemies: 10
+    NextWaveTime: 0c000000
+    spawnPatternIndex: 19
+  - waves:
+    - enemies:
+      - enemy: spiderling venom
+        minOccurance: 3
+        maxOccurance: 3
+      - enemy: king cobra
+        minOccurance: 1
+        maxOccurance: 1
+      NoOfEnemies: 20
+    - enemies:
+      - enemy: spiderling venom
+        minOccurance: 2
+        maxOccurance: 2
+      NoOfEnemies: 10
+    NextWaveTime: 0f000000
+    spawnPatternIndex: 20
+  - waves:
+    - enemies:
+      - enemy: monster catbat
+        minOccurance: 2
+        maxOccurance: 2
+      - enemy: death knight
+        minOccurance: 1
+        maxOccurance: 1
+      NoOfEnemies: 10
+    - enemies:
+      - enemy: monster catbat
+        minOccurance: 1
+        maxOccurance: 1
+      - enemy: death knight
+        minOccurance: 1
+        maxOccurance: 1
+      NoOfEnemies: 10
+    NextWaveTime: 12000000
+    spawnPatternIndex: 21
+  - waves:
+    - enemies:
+      - enemy: flower monster
+        minOccurance: 1
+        maxOccurance: 1
+      - enemy: spider venom
+        minOccurance: 2
+        maxOccurance: 2
+      NoOfEnemies: 10
+    - enemies:
+      - enemy: spiderling venom
+        minOccurance: 2
+        maxOccurance: 2
+      NoOfEnemies: 10
+    NextWaveTime: 12000000
+    spawnPatternIndex: 22
+  - waves:
+    - enemies:
+      - enemy: zombie
+        minOccurance: 2
+        maxOccurance: 2
+      - enemy: one eyed wizard
+        minOccurance: 1
+        maxOccurance: 1
+      NoOfEnemies: 10
+    - enemies:
+      - enemy: zombie
+        minOccurance: 1
+        maxOccurance: 1
+      NoOfEnemies: 10
+    NextWaveTime: 0c000000
+    spawnPatternIndex: 23
+  - waves:
+    - enemies:
+      - enemy: dragon
+        minOccurance: 4
+        maxOccurance: 4
+      - enemy: scare crow
+        minOccurance: 1
+        maxOccurance: 1
+      NoOfEnemies: 20
+    NextWaveTime: 
+    spawnPatternIndex: 24
+  - waves:
+    - enemies:
+      - enemy: death knight
+        minOccurance: 2
+        maxOccurance: 2
+      - enemy: orc
+        minOccurance: 2
+        maxOccurance: 2
+      NoOfEnemies: 20
+    - enemies:
+      - enemy: orc
+        minOccurance: 1
+        maxOccurance: 1
+      - enemy: death knight
+        minOccurance: 1
+        maxOccurance: 1
+      NoOfEnemies: 10
+    NextWaveTime: 14000000
+    spawnPatternIndex: 25
+  - waves:
+    - enemies:
+      - enemy: magma golem
+        minOccurance: 2
+        maxOccurance: 2
+      - enemy: scare crow
+        minOccurance: 1
+        maxOccurance: 1
+      NoOfEnemies: 10
+    NextWaveTime: 
+    spawnPatternIndex: 26
+  - waves:
+    - enemies:
+      - enemy: magma golem
+        minOccurance: 2
+        maxOccurance: 2
+      - enemy: metalong
+        minOccurance: 3
+        maxOccurance: 3
+      NoOfEnemies: 20
+    NextWaveTime: 
+    spawnPatternIndex: 27
+  - waves:
+    - enemies:
+      - enemy: skeleton
+        minOccurance: 2
+        maxOccurance: 2
+      - enemy: skeleton archer
+        minOccurance: 1
+        maxOccurance: 1
+      NoOfEnemies: 10
+    NextWaveTime: 
+    spawnPatternIndex: 28
+  - waves:
+    - enemies:
+      - enemy: deamon wolf
+        minOccurance: 2
+        maxOccurance: 2
+      - enemy: one eyed wizard
+        minOccurance: 1
+        maxOccurance: 1
+      NoOfEnemies: 10
+    - enemies:
+      - enemy: deamon wolf
+        minOccurance: 1
+        maxOccurance: 1
+      NoOfEnemies: 10
+    NextWaveTime: 0f000000
+    spawnPatternIndex: 29
+  - waves:
+    - enemies:
+      - enemy: magma golem
+        minOccurance: 2
+        maxOccurance: 2
+      - enemy: spiderling venom
+        minOccurance: 2
+        maxOccurance: 2
+      NoOfEnemies: 20
+    - enemies:
+      - enemy: magma golem
+        minOccurance: 1
+        maxOccurance: 1
+      - enemy: spiderling venom
+        minOccurance: 1
+        maxOccurance: 1
+      NoOfEnemies: 10
+    NextWaveTime: 10000000
+    spawnPatternIndex: 30
+  - waves:
+    - enemies:
+      - enemy: skeleton archer
+        minOccurance: 1
+        maxOccurance: 1
+      - enemy: orc slinger
+        minOccurance: 2
+        maxOccurance: 2
+      NoOfEnemies: 10
+    - enemies:
+      - enemy: skeleton
+        minOccurance: 1
+        maxOccurance: 1
+      NoOfEnemies: 10
+    NextWaveTime: 0f000000
+    spawnPatternIndex: 31
+  - waves:
+    - enemies:
+      - enemy: one eyed wizard
+        minOccurance: 2
+        maxOccurance: 2
+      - enemy: orc slinger
+        minOccurance: 1
+        maxOccurance: 1
+      NoOfEnemies: 10
+    NextWaveTime: 
+    spawnPatternIndex: 32
+  - waves:
+    - enemies:
+      - enemy: flower monster
+        minOccurance: 1
+        maxOccurance: 1
+      - enemy: dragon
+        minOccurance: 2
+        maxOccurance: 2
+      NoOfEnemies: 10
+    - enemies:
+      - enemy: metalon
+        minOccurance: 3
+        maxOccurance: 3
+      NoOfEnemies: 10
+    NextWaveTime: 12000000
+    spawnPatternIndex: 33
+  - waves:
+    - enemies:
+      - enemy: skeleton archer
+        minOccurance: 2
+        maxOccurance: 2
+      - enemy: dragon
+        minOccurance: 2
+        maxOccurance: 2
+      NoOfEnemies: 20
+    - enemies:
+      - enemy: zombie
+        minOccurance: 2
+        maxOccurance: 2
+      NoOfEnemies: 10
+    NextWaveTime: 0c000000
+    spawnPatternIndex: 34
+  - waves:
+    - enemies:
+      - enemy: one eyed wizard
+        minOccurance: 1
+        maxOccurance: 1
+      - enemy: death knight
+        minOccurance: 2
+        maxOccurance: 2
+      NoOfEnemies: 10
+    - enemies:
+      - enemy: spiderling venom
+        minOccurance: 2
+        maxOccurance: 2
+      NoOfEnemies: 10
+    NextWaveTime: 0f000000
+    spawnPatternIndex: 35
+  - waves:
+    - enemies:
+      - enemy: flower monster
+        minOccurance: 1
+        maxOccurance: 1
+      - enemy: zombie
+        minOccurance: 4
+        maxOccurance: 4
+      NoOfEnemies: 20
+    - enemies:
+      - enemy: dragon
+        minOccurance: 1
+        maxOccurance: 1
+      NoOfEnemies: 10
+    NextWaveTime: 12000000
+    spawnPatternIndex: 36
+  - waves:
+    - enemies:
+      - enemy: orc slinger
+        minOccurance: 2
+        maxOccurance: 2
+      - enemy: metalon
+        minOccurance: 3
+        maxOccurance: 3
+      NoOfEnemies: 20
+    NextWaveTime: 
+    spawnPatternIndex: 37
+  - waves:
+    - enemies:
+      - enemy: one eyed wizard
+        minOccurance: 1
+        maxOccurance: 1
+      - enemy: death knight
+        minOccurance: 2
+        maxOccurance: 2
+      NoOfEnemies: 10
+    - enemies:
+      - enemy: spiderling venom
+        minOccurance: 2
+        maxOccurance: 2
+      NoOfEnemies: 10
+    NextWaveTime: 12000000
+    spawnPatternIndex: 38
+  - waves:
+    - enemies:
+      - enemy: skeleton round
+        minOccurance: 1
+        maxOccurance: 1
+      - enemy: spider venom
+        minOccurance: 1
+        maxOccurance: 1
+      - enemy: zombie
+        minOccurance: 1
+        maxOccurance: 1
+      NoOfEnemies: 10
+    NextWaveTime: 
+    spawnPatternIndex: 39
+  - waves:
+    - enemies:
+      - enemy: scare crow
+        minOccurance: 2
+        maxOccurance: 2
+      - enemy: orc
+        minOccurance: 1
+        maxOccurance: 1
+      NoOfEnemies: 20
+    - enemies:
+      - enemy: dragon
+        minOccurance: 2
+        maxOccurance: 2
+      NoOfEnemies: 10
+    NextWaveTime: 12000000
+    spawnPatternIndex: 40
+  - waves:
+    - enemies:
+      - enemy: dragon
+        minOccurance: 4
+        maxOccurance: 4
+      - enemy: death knight
+        minOccurance: 2
+        maxOccurance: 2
+      NoOfEnemies: 20
+    NextWaveTime: 
+    spawnPatternIndex: 41
+  - waves:
+    - enemies:
+      - enemy: flower monster
+        minOccurance: 1
+        maxOccurance: 1
+      - enemy: spiderling venom
+        minOccurance: 4
+        maxOccurance: 4
+      NoOfEnemies: 20
+    - enemies:
+      - enemy: death knight
+        minOccurance: 2
+        maxOccurance: 2
+      NoOfEnemies: 10
+    NextWaveTime: 12000000
+    spawnPatternIndex: 42
+  - waves:
+    - enemies:
+      - enemy: spider venom
+        minOccurance: 2
+        maxOccurance: 2
+      - enemy: king cobra
+        minOccurance: 2
+        maxOccurance: 2
+      NoOfEnemies: 20
+    NextWaveTime: 
+    spawnPatternIndex: 43
+  - waves:
+    - enemies:
+      - enemy: metalon
+        minOccurance: 3
+        maxOccurance: 3
+      - enemy: skeleton archer
+        minOccurance: 2
+        maxOccurance: 2
+      NoOfEnemies: 20
+    - enemies:
+      - enemy: skeleton
+        minOccurance: 3
+        maxOccurance: 3
+      NoOfEnemies: 10
+    NextWaveTime: 0f000000
+    spawnPatternIndex: 44
+  - waves:
+    - enemies:
+      - enemy: one eyed wizard
+        minOccurance: 2
+        maxOccurance: 2
+      - enemy: monster catbat
+        minOccurance: 3
+        maxOccurance: 3
+      NoOfEnemies: 20
+    - enemies:
+      - enemy: spider venom
+        minOccurance: 4
+        maxOccurance: 4
+      NoOfEnemies: 10
+    NextWaveTime: 12000000
+    spawnPatternIndex: 45
+  - waves:
+    - enemies:
+      - enemy: magma golem
+        minOccurance: 2
+        maxOccurance: 2
+      - enemy: scare crow
+        minOccurance: 2
+        maxOccurance: 2
+      NoOfEnemies: 20
+    - enemies:
+      - enemy: metalon
+        minOccurance: 3
+        maxOccurance: 3
+      NoOfEnemies: 10
+    NextWaveTime: 0f000000
+    spawnPatternIndex: 46
+  - waves:
+    - enemies:
+      - enemy: orc slinger
+        minOccurance: 2
+        maxOccurance: 2
+      - enemy: deamon wolf
+        minOccurance: 3
+        maxOccurance: 3
+      NoOfEnemies: 20
+    NextWaveTime: 
+    spawnPatternIndex: 47
+  - waves:
+    - enemies:
+      - enemy: skeleton archer
+        minOccurance: 2
+        maxOccurance: 2
+      - enemy: one eyed wizard
+        minOccurance: 2
+        maxOccurance: 2
+      NoOfEnemies: 20
+    - enemies:
+      - enemy: monster catbat
+        minOccurance: 3
+        maxOccurance: 3
+      NoOfEnemies: 10
+    NextWaveTime: 0c000000
+    spawnPatternIndex: 48
+  - waves:
+    - enemies:
+      - enemy: orc
+        minOccurance: 2
+        maxOccurance: 2
+      - enemy: flower monster
+        minOccurance: 2
+        maxOccurance: 2
+      - enemy: metalon
+        minOccurance: 2
+        maxOccurance: 2
+      NoOfEnemies: 20
+    - enemies:
+      - enemy: orc slinger
+        minOccurance: 2
+        maxOccurance: 2
+      NoOfEnemies: 10
+    - enemies:
+      - enemy: deamon wolf
+        minOccurance: 2
+        maxOccurance: 2
+      NoOfEnemies: 10
+    - enemies:
+      - enemy: magma golem
+        minOccurance: 2
+        maxOccurance: 2
+      NoOfEnemies: 10
+    NextWaveTime: 0f0000000f0000000f000000
+    spawnPatternIndex: 49
+  spawnPatterns:
+  - {fileID: 794561183632881438, guid: 414fc9e56a0038645a96e7eb9e16b8b6, type: 3}
+  - {fileID: 7722958953102737488, guid: 877e31fd5ff093545b758175522abf98, type: 3}
+  - {fileID: 6745483471134061193, guid: f6ea83abaeb5dd54dbe194964844f19d, type: 3}
+  - {fileID: 7412906153592662807, guid: ff48543f5c47af544955fcacd604e4d7, type: 3}
+  - {fileID: 2837062159844785426, guid: a19471581ef71a942a80d9faa5fa69eb, type: 3}
+  - {fileID: 2481231897607493077, guid: 4d117cdf413273d45a9ad06a3f87a833, type: 3}
+  - {fileID: 1334703835811892972, guid: a2321d213f3612e41bbaa4007b6ac43b, type: 3}
+  - {fileID: 2007305659652132720, guid: 936b7ec384a07cf41b74ae5772da7f35, type: 3}
+  - {fileID: 1989330677172657669, guid: 7db87adf54528394cbcf4a174919ecff, type: 3}
+  - {fileID: 8257926469449423322, guid: 118616e8b437d4d42b93b0d73f1014ce, type: 3}
+  - {fileID: 987651988730370654, guid: 61a3ce49e82360b47a04b66edb36ac65, type: 3}
+  - {fileID: 5481272202894046638, guid: 43e65b8a48da49b4699fc825f50ad76a, type: 3}
+  - {fileID: 8847118099994626743, guid: 7a6bf48a607a0654792559740af65223, type: 3}
+  - {fileID: 8401100556748340289, guid: 47fb539f8aa580f44840ad21139cafb1, type: 3}
+  - {fileID: 3207640171698054486, guid: 5735466da20cb644cb8fa4f7fd346e16, type: 3}
+  - {fileID: 758537843409723996, guid: 30c023ba84ace4f48bf71129b580aefe, type: 3}
+  - {fileID: 7710403178579547618, guid: b6de0a1c0ae0519418465235f7341734, type: 3}
+  - {fileID: 4855815546942416008, guid: f06c5cddee07c8146a0b9acd1158e843, type: 3}
+  - {fileID: 5486542965664272610, guid: f23d07922d95212438d24e61d609326c, type: 3}
+  - {fileID: 7845552067209547510, guid: 50edb5819aa1b9240a9049b43b7d2624, type: 3}
+  - {fileID: 7964317128184639381, guid: 186f6481f142ab741aab39291268c02e, type: 3}
+  - {fileID: 7092044866117253022, guid: 405b9b46a560f5943bd23be6958d91f7, type: 3}
+  - {fileID: 1964223512818645856, guid: bb3e6296b9477b542a87155f0deeb050, type: 3}
+  - {fileID: 126815428605628686, guid: 16f0ffa03099f60409d963895635c6f1, type: 3}
+  - {fileID: 9142207868639317988, guid: 2fa2a64820a7a2948a774dab45301a33, type: 3}
+  - {fileID: 2240840622803335358, guid: 916b5f56f6ce0f84dbaee93e58a2763a, type: 3}
+  - {fileID: 4982862736381455424, guid: 93adf7dbc486dcb45810a93169bf2aa3, type: 3}
+  - {fileID: 7085393277254329562, guid: de00d56ea3c1a0041a97e290c58597c5, type: 3}
+  - {fileID: 4201778236056688262, guid: 85a2bfcd63026f246beaf38c3f6897e3, type: 3}
+  - {fileID: 4436622177555696666, guid: 2b4010167fa98ff4f9856bf0978125de, type: 3}
+  - {fileID: 7582864818687321059, guid: 3f5f35e2629dc1c4c966d0734bc1cc4a, type: 3}
+  - {fileID: 4377902844759735648, guid: 35a983c2cb807cc4781f8801561a302e, type: 3}
+  - {fileID: 7161965964521077863, guid: b1847306f9a52f74db40c1cd6e34cd7c, type: 3}
+  - {fileID: 1490803962307951932, guid: edc92d08f9435a345b63a4e3565359e2, type: 3}
+  - {fileID: 4029491164348329283, guid: 8ab25ca820d606049a737b2d3606e257, type: 3}
+  - {fileID: 2975011976874490293, guid: 845d82dc07652c142b2e2f938f25e944, type: 3}
+  - {fileID: 5285518266535154279, guid: 865da7f67fad8ff47a42eebc55d0f77d, type: 3}
+  - {fileID: 3768790971902348952, guid: 84b96450607907048bebeb1a2963ff6b, type: 3}
+  - {fileID: 5313930028991304757, guid: 11de5c47445e10442a34cd375591e5d7, type: 3}
+  - {fileID: 3994397037076615477, guid: 4cd5d2a0e9cf5544a93db9cbe10cc6fc, type: 3}
+  - {fileID: 4136749784288860860, guid: fa222eca63e8a77498eb368f80d9b699, type: 3}
+  - {fileID: 9216463895897167350, guid: 39fd1247116db2f42b3775f66fe067f8, type: 3}
+  - {fileID: 7648389503759758726, guid: 6d5eb7971babc334394766e4ee184b10, type: 3}
+  - {fileID: 4738407185287131645, guid: af15be23457f1e74082982877166b8ab, type: 3}
+  - {fileID: 7695923993049936220, guid: 324bb85e5fe6b0d41a5bdb919d977899, type: 3}
+  - {fileID: 8406532158746394813, guid: dc51edc2b9de58e419072e2e22ee924c, type: 3}
+  - {fileID: 2728713186321482876, guid: 7145e3cdde1160f47af0a61bd53783e1, type: 3}
+  - {fileID: 2911764638684447180, guid: c226bc0a13a1e6a43bb060507712a03f, type: 3}
+  - {fileID: 2784561227960418039, guid: 8b6e42cc0842be0488a474789217f76e, type: 3}
+  - {fileID: 3628961051716696925, guid: 6ce3758ff85f89d4689ebb190fd2290d, type: 3}
+  healthBarManager: {fileID: 0}
+  pointerManager: {fileID: 0}
+  diskPrefab: {fileID: 4484087443446467688, guid: b69f0f6c3c4cc064baee2e02c8a2d116,
+    type: 3}
+  locGlowPrefab: {fileID: 7904154651092703007, guid: fc20fa5173190b64cac6799cf2f403c5,
+    type: 3}
+  closeMeidumPossibilitySplit: 60
+  mediumLongPossibilitySplit: 50
+  runtimePanel: {fileID: 0}
+  coinPoolManager: {fileID: 0}
+  stressReceiver: {fileID: 0}
+  stress: 0.325
